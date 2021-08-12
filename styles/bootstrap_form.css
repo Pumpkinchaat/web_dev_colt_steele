@@ -1,0 +1,9 @@
+body {
+    background-color: black !important;
+    color: blanchedalmond !important;
+}
+
+.container {
+    padding: 10px !important;
+    background-color: rgb(34, 34, 34);
+}

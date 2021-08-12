@@ -1,0 +1,27 @@
+<%- include('../partials/head.ejs') %>
+
+    <div class="container-fluid bg-secondary text-light">
+        <h1>Welcome to the <span><%= `${name}` %></span> Subreddit</h1>
+        <h3>
+            <p>
+                Subscribers: <span><%= `${subscribers}` %></span>
+                <br>
+                <span><%= `${description}` %> </span>
+            </p>
+        </h3>
+        <hr>
+        <h2>
+            <span><% for (let post of posts){ %></span>
+            <div>
+                Title: <span><%= post.title %></span>
+                <br>Author: <span><%= post.author %></span>
+                <span><% if (post.img){ %> </span>
+                <img src="<%=` ${post.img}` %>" alt="">
+                <span><% } %> </span>
+                <hr>
+            </div>
+            <span><% } %> </span>
+        </h2>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>

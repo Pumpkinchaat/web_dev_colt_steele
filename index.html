@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <h1>This is a Test</h1>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Subjects</th>
+                <th rowspan="2">Pass?</th>
+            </tr>
+            <tr>
+
+                <th>Physics</th>
+                <th>Maths</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Susmit Singh</td>
+                <td>99</td>
+                <td>89</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Nina Singh</td>
+                <td>88</td>
+                <td>45</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <p>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter your Username: </label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter your Password: </label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </p>
+        <p>
+
+            <label for="number">Enter your Number: </label>
+            <input type="number" placeholder="Number" id="number" name="number">
+        </p>
+        <button type="submit">Submit!</button>
+    </form>
+    </p>
+    <hr>
+    <form action="https://www.reddit.com/search">
+        <label for="search_reddit">Search in Reddit!</label>
+        <input type="text" name="q" id="search_reddit">
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+
+    <h2>Implementing Different form_input types</h2>
+    <hr>
+    <p>
+    <form action="/tacos">
+        <label for="agree">Click here if you agree</label>
+        <input type="checkbox" id="agree" name="agree_tos">
+        </p>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" id="xs" name="size" value="xs">
+            <br>
+            <label for="s">S</label>
+            <input type="radio" id="s" name="size" value="s">
+            <br>
+            <label for="M">M</label>
+            <input type="radio" id="m" name="size" value="m">
+            <br>
+            <button type="submit">SUBMIT</button>
+    </form>
+    </p>
+    <hr>
+    <h2>Food Order</h2>
+    <p>
+    <form action="/tacos">
+        <p>
+            <label for="spice">Select the spice level</label>
+            <input type="range" id="spice" name="Spice_level" min=0 max=100>
+        </p>
+        <p>
+            <label for="fod_items">Select Food Items</label>
+            <input type="number" id="fod_items" name = "No_of_items" min = 1 max = 5 placeholder="From 1 to 5 only">
+        </p>
+        <p>
+            <label for="sp_instruct">Any special instructions? </label>
+            <textarea name="sp_instructs" id="sp_instruct" cols="30" rows="10" placeholder="Type any Special Instructions here...." required minlength="20" maxlength="100"></textarea>
+        </p>
+        <p>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <button type="submit">SUBMIT</button>
+    </form>
+    </p>
+</body>
+</html>

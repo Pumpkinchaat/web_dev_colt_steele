@@ -1,0 +1,61 @@
+div {
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+#one div:nth-of-type(2n - 1){
+    background-color: blue;
+}
+
+#one div:nth-of-type(2n) {
+    background-color: blueviolet;
+    position: static;
+    left: 100px;
+}
+
+#two div:nth-of-type(2n - 1){
+    background-color: blue;
+}
+
+#two div:nth-of-type(2n) {
+    background-color: blueviolet;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#three div:nth-of-type(2n - 1){
+    background-color: blue;
+}
+
+#three div:nth-of-type(2n) {
+    background-color: blueviolet;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#four div:nth-of-type(2n - 1){
+    background-color: blue;
+}
+
+#four div:nth-of-type(2n) {
+    background-color: blueviolet;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
+#five div:nth-of-type(2n - 1){
+    background-color: blue;
+}
+
+#five div:nth-of-type(2n) {
+    background-color: blueviolet;
+    position: sticky;
+    top: 20px;
+}

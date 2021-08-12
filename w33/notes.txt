@@ -1,0 +1,47 @@
+npm init in a folder
+npm install express (npm - express)
+const express  =require('express')
+then we need to execute xpress and save to app
+const app = express()
+print(app)
+app.listen(3000 , () => {
+	//something
+}) //listen on ports
+//website is localhost:3000
+app.use(()=>{}) // anytime we have a request this will run
+ ----
+on every req we have inside app.use((req , res)=>{console.	log(req)})
+res.send(//can take in anything)
+res.send(//js obj will turn into JSON , even HTML too)
+-----
+ROUTING
+app.get('/path' , () => {console.log('meow')})
+// now in xpres we are getting in serial order
+use res.send('meow') // to send back some content, this wil be converted to HTML
+// Root route  = /
+app.get('/' , (req , res)=>{res.send('Home')})
+
+btw get below is just for post requests
+
+use app.post('/path' , ()=>{}) this will be sent using post req
+use app.get('*' , ()=>{}) // this will be used to get all non defined paths
+-------
+PATH PARAMETERS
+in app.get or post : is used to describe a variable or a placeholder
+eg. app.get('/r/:subreddit' , (req , res)=>{res.send('test')}) // something like this
+const {subreddit}  =req.params
+then use it, to get the placeholder text if provided
+DIY 'r/subreddit/post' display and return hello page
+-----
+QUERY STRING
+to get some sort of input or query
+ use it in simple app.get('/search' , (req , res)=>{
+	const {q} = req.query;
+	res.send('<h1>Search resulsts for ${q}</h1>');
+})
+//wap nothing found if nothign searched
+
+-----
+NODOEMON
+automatically restarts our server on changes in code
+npm i -g nodemon //also adds it to path

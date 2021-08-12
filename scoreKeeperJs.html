@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/scoreKeeperJs.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="image"></div>
+        <h3>Ping Pong Score Keeper</h3>
+        <div class="scoreKeeper">
+            <h2 id="scoreBoard">0 to 0</h2>
+            <p>
+                Use the buttons to keep track of the score
+            </p>
+            <form action="">
+                <label for="gameCounter">Play till </label>
+                <select name="gameCounter" id="gameCounter">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </form>
+            <div class="bottomButtons">
+                <button type="button" id="player1">Player 1</button>
+                <button type="button" id="player2">Player 2</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/scoreKeeperJs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+    padding: 1.6666667%;
+}

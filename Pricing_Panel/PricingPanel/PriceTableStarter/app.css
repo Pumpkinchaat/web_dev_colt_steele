@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    width: 100%;
+    max-width: 990px;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel .pricing-plan {
+    border-bottom: solid 1px #e1f1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel .pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.panel .pricing-plan .pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+    align-self: center;
+}
+
+.pricing-header {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    color: #888;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.pricing-features {
+    margin: 25px 0px 25px;
+    color: #016ff9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-features li {
+    padding: 15px;
+    border-top: #888 1px solid;
+    width: 100%;
+    font-weight: bold;
+}
+
+.pricing-features li:last-child {
+    border-bottom: #888 1px solid;
+    padding: 15px;
+    width: 100%;
+}
+
+.pricing-price {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0, 37, 116);
+    margin-bottom: 25px;
+}
+
+.pricing-plan a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.5rem;
+    border: 1px solid #016ff9;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: block;
+    align-self: center;
+    width: 30%;
+    margin: 1rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-plan a:hover {
+    background-color: #e1f1ff;
+}
+
+.pricing-plan .pricing-button.is-featured {
+    background-color: #016ff9;
+    color: white;
+    border-color: #60a9ff;
+    transition: background-color, color 200ms ease-in-out;
+}
+
+.pricing-plan .pricing-button.is-featured:hover {
+    background-color: #e0edfc;
+    color: #016ff9;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .panel .pricing-plan {
+        border-bottom: none;
+        border-right: solid 1px #e1f1ff;
+        align-self: center;
+        max-width: 30%;
+        padding: 25px 50px;
+    }
+    .panel .pricing-plan:last-child {
+        border-right: none;
+    }
+    .panel .pricing-plan .pricing-img {
+        max-width: 70%;
+        align-self: center;
+    }
+    .panel .pricing-plan .pricing-features li {
+        max-width: 100%;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+    }
+    .pricing-price {
+        font-size: 2.5rem;
+        margin-bottom: 7px;
+    }
+    .pricing-plan a {
+        width: 120px;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 15px;
+    }
+}

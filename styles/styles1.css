@@ -1,0 +1,104 @@
+* {
+    color : white;
+    background-color: black;
+}
+
+button {
+    font-size: 20px;
+    background-color: lightgreen;
+    color: black;
+}
+
+h1 , h2 {
+    color: lightgreen;
+}
+
+#sign_up {
+    background-color: darkred;
+    color: white;
+}
+
+#login {
+    background-color: yellow;
+    color: darkblue;
+}
+
+.tag {
+    color: lightsalmon;
+    font-size: 15px;
+    background-color: darkblue; 
+}
+
+.footer a {
+    color : lightpink;
+    background-color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span a {
+    color : lightsalmon;    
+}
+
+p + button {
+    background-color: magenta;
+}
+
+.footer > a {
+    background-color: maroon;
+}
+
+a[href = "yolo"] {
+    color: white;   
+}
+
+.main button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.main button:active {
+    background-color: darkred;
+    color: white;
+}
+
+.main a:hover{
+    text-decoration: underline;
+}
+.main a {
+    font-weight: bold;
+}
+h2::first-letter{
+    color : yellow;
+}
+h2::first-letter {
+    color : red;
+}
+
+.header label {
+    color : white;
+    font-size: 0.85rem;
+}
+
+.header input[type="text"]{
+    border-style: solid;
+    border-color: grey;
+    font-size: 0.85rem;
+}
+
+.header button {
+    background-color: darkblue !important;
+    border-style: none;
+    margin : 0 0.25rem 0;
+    color : white !important;
+    padding: 0 2.25rem 0;
+    border-radius: 10rem;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+    text-align: center; 
+}

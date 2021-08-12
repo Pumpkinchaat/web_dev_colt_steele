@@ -1,0 +1,24 @@
+body {
+    padding:0;
+    margin: 0;
+    background-color: black;
+}
+
+section {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#inner1 {
+    background-color: rgba(4, 0, 255, 0.4);
+    width: 100px;
+    height: 100px;
+}
+
+#inner2 {
+    background-color: rgba(4, 0, 255);
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+}

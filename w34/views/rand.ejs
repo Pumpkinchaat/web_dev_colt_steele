@@ -1,0 +1,8 @@
+<%- include('../partials/head.ejs') %>
+    <h1>The Random Number is <span><%= num %></span></h1>
+    <h2>The number is
+        <span><% if (even) {%> </span> even
+        <span><% } else { %> </span> odd
+        <span><% } %> </span>
+    </h2>
+    <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    transition: background-color 0.5s ease-out;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    box-sizing: border-box;
+    font-size: 10rem;
+}

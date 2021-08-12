@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    border: solid black 15px;
+    height: 100vh;
+    background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: solid black 5px;
+}

@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(99, 99, 99) !important;
+}
+
+#nav-team-logo {
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+    justify-self: center;
+}
+
+#hook {
+    background-color: black !important;
+}

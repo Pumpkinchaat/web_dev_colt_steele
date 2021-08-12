@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+section{
+    background: center/cover url("https://images.hdqwalls.com/wallpapers/4k-batman-jp.jpg");
+    margin: 0 auto;
+    height: 500px;
+    width: 800px;
+}
+
+h1{
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: whitesmoke;
+}

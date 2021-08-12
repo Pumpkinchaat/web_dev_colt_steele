@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section button{
+    border: solid;
+    border-color: orange;
+    border-width: 5px;
+    height: 80px;
+    width: 170px;
+    background-color: black;
+    color: orange;
+    font-size: 30px;
+    transition:border-color 0.15s , color 0.15s , box-shadow 0.15s , transform 0.15s;
+    transition-timing-function: ease-in;
+}
+
+section button:hover{
+    border-color: yellow;
+    color: white;
+    transform:translateY(-10px);
+    box-shadow: 0px 10px 10px -6px yellow;
+}

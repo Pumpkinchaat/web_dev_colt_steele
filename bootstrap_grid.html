@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/bootstrap_grid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+    <div class="container" id="cont">
+        <div class="row">
+            <div class="col-12 col-sm-6 bg-warning text-center">Test</div>
+            <div class="col-12 col-sm-6 bg-dark text-white text-center">Test</div>
+        </div>
+
+        <div class="row">
+            <div class="col border">Test</div>
+            <div class="col border">Test</div>
+            <div class="w-100"></div>
+            <div class="col border">Test</div>
+            <div class="col border">Test</div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col bg-secondary">Test</div>
+            <div class="col bg-danger col-md-auto">Test</div>
+            <div class="col bg-secondary col-lg-3">Test</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col col-md-2 bg-warning border">Test</div>
+            <div class="col col-md-2 bg-warning border">Test</div>
+            <div class="col col-md-2 bg-warning border">Test</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-4 col-md-3 border bg-light">Test</div>
+            <div class="col-12 col-sm-4 col-md-3 border bg-light">Test</div>
+            <div class="col-12 col-sm-4 col-md-3 border bg-light">Test</div>
+            <div class="col-12 col-sm-4 col-md-3 border bg-light">Test</div>
+        </div>
+
+        <div class="container-fluid px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col px-lg-5 border">Test</div>
+                <div class="col px-lg-5 border">Test</div>
+            </div>
+        </div>
+        <!-- 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div> -->
+
+        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col border">Test</div>
+            <div class="col border">Test</div>
+            <div class="col border">Test</div>
+            <div class="col border">Test</div>
+        </div> -->
+
+        <div class="row justify-content-start ">
+            <div class="col-4 border bg-danger">Test</div>
+            <div class="col-4 border bg-danger">Test</div>
+        </div>
+
+        <div class="row justify-content-center ">
+            <div class="col-4 border bg-danger">Test</div>
+            <div class="col-4 border bg-danger">Test</div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-4 border bg-danger">Test</div>
+            <div class="col-4 border bg-danger">Test</div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-4 border bg-danger">Test</div>
+            <div class="col-4 border bg-danger">Test</div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-4 border bg-danger">Test</div>
+            <div class="col-4 border bg-danger">Test</div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col"><img class="image-fluid img-thumbnail bg-danger" src="https://picsum.photos/200" alt=""></div>
+            <div class="col"><img class="image-fluid img-thumbnail bg-danger" src="https://picsum.photos/200" alt=""></div>
+            <div class="col"><img class="image-fluid img-thumbnail bg-danger" src="https://picsum.photos/200" alt=""></div>
+        </div>
+
+        <div class="mx-3 container border">
+            <form action="">
+                <div class="form-group">
+                    <label for="email" class="text-white">Email Address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email-help" placeholder="Email Address">
+                    <small id="email-help" class="form-text text-muted">This is confidential!</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="text-white">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" aria-describedby="pass-help">
+                    <small id="pass-help" class="form-text text-muted">This is secret</small>
+                </div>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label for="check" class="form-check-label text-white">Check me out</label>
+                </div>
+
+                <button type="submit" class="mb-3 btn btn-outline-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="mx-5 container">
+            <form action="">
+                <div class="form-group">
+                    <label for="email text-white">Email Id</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email Id" aria-describedby="email-help" readonly>
+                    <small id="email-help" class="form-text text-muted">Email help</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="multiple-select text-white">Email Id</label>
+                    <select multiple id="multiple-select" class="form-control" placeholder="Select" aria-describedby="select-help">
+                        <option value="1">1</option>
+                        <option value="1">1</option>
+                        <option value="1">1</option>
+                        <option value="1">1</option>
+                        <option value="1">1</option>
+                        <option value="1">1</option>
+                    </select>
+                    <small id="select-help" class="form-text text-muted">Select help</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="textarea text-white">Write Something</label>
+                    <textarea id="textarea" class="form-control" placeholder="Type Something Here...." aria-describedby="textarea-help"></textarea>
+                    <small id="textarea-help" class="form-text text-muted">Textarea help</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email Id" aria-describedby="email-help">
+                    <small id="email-help" class="form-text text-muted">Email help</small>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
